@@ -115,15 +115,44 @@ Example:
 
 ### Grouping and Capturing
 
+This refers to refers to the ability to group parts of the pattern together and capture the matched text. Grouping and capturing can be useful for extracting specific parts of a matched string. Specifically it can be used to find the scheme, domain, path, and query parameters of a URL, many mentioned above in my summary. 
+
+```text
+Example:
+/^(https?):\/\/([a-z0-9-]+\.)+([a-z]{2,})(\/[\w.-]*)*(\?([\w%]+=[\w%]+)(&([\w%]+=[\w%]+))*)?$/i
+
+// Group 1: Scheme (e.g. http or https)
+// Group 2: Domain (e.g. example.com)
+// Group 3: Top-level domain (e.g. com)
+// Group 4: Path (e.g. /path/to/page.html)
+// Group 5: Query string (e.g. ?param1=value1&param2=value2)
+```
+
 ### Bracket Expressions
 
+Bracket expressions have been defined in mutiple ways, some group bracket expressions with character classes, others refer to this as the expression between the brackets like seen above:
+
+```text
+Example:
+[a-z0-9]
+[a-z]
+[\w.-]
+```
+
 ### Greedy and Lazy Match
+Separating them out: Greedy Matching refers to matching as many characters as possible, often combining domain and subdomian as one group. Lazy Matching matching as few of characters as possible. This is used to match specific parts of a url, such as wanting to match a domain name but not a path.
 
-### Boundaries
+```text
+Examples:
+/^https?:\/\/[a-z0-9-]+(\.[a-z]{2,})+/i
 
-### Back-references
+// Greedy matching: Matches the entire domain name (e.g. example.com) as one group.
 
-### Look-ahead and Look-behind
+/^https?:\/\/[a-z0-9-]+(\.[a-z]{2,})+?/i
+
+// Lazy matching: Matches each level of the domain name (e.g. example and com) as separate groups.
+
+```
 
 ## Author
 
