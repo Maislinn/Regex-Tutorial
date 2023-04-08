@@ -6,7 +6,7 @@
 
 ## DISCLAIMER 
 
-This repository was cloned from a starter code originated by UC Berkeley to me for educational purposes. 
+This repository was cloned from a starter code originated by UC Berkeley to me for educational purposes. You will see the template file included. 
 
 ## Description
 
@@ -23,23 +23,12 @@ WHEN I reach the end of the tutorial
 THEN I find a section about the author and a link to the author’s GitHub profile
 
 ## Table of Contents
- * [Installation](#installation)
  * [Usage](#usage)
  * [Features](#features)
  * [Credits](#credits)
  * [License](#license)
  * [Contributing](#contributing)
 
-
-## Installation
-In your internal terminal run:
-- NPM I
-- MySql -u root -p
-- "Enter In Password"
-- Source db/schema.sql
-- Exit
-- Node Seeds
-- NPM Start
 
 ## Usage
 The gist is used to explain regex matching urls 
@@ -53,13 +42,13 @@ The gist is used to explain regex matching urls
 ## Credits
 - UC Berkeley Extension 2023
 - [GitHub](https://docs.github.com/en)
-- [Stackoverflow](https://stackoverflow.com/)
 
 ## License
 
 
 ![license](https://img.shields.io/badge/license-MIT-yellow)
 Distributed under the [MIT License](https://opensource.org/license/mit/). See [LICENSE.txt](/LICENSE) for more information.
+
 ## Badges
 
 
@@ -69,7 +58,7 @@ Distributed under the [MIT License](https://opensource.org/license/mit/). See [L
 
 
 ## Contributing
-As a UC Berkeley student and tech professional, I want to continue to learn and create effective code. Please reach out to UC Berkeley to access the source code or reach out to me to offer your own solutions. 
+As a UC Berkeley student and tech professional, I want to continue to learn and grow, please add to my knowledge with your own commits and comments on my gist file. 
 
 
 Maislinn Helfer | Github @maislinn
